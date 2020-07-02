@@ -9,13 +9,13 @@ class Student
   end
 
   self.create_table
-    sql <<- SQL 
+    sql <<- SQL
     " CREATE TABLE students (
     id INTEGER PRIMARY KEY,
-    name TEXT, 
+    name TEXT,
     grade INTEGER
     );"
-    SQL 
+    SQL
     DB[:conn]
   end
 
